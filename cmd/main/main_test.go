@@ -30,6 +30,4 @@ func TestServer(t *testing.T) {
 	if string(body) != "<body>testpage</body>" {
 		t.Errorf("unexpected content, got: %s, expected: <body>testpage</body>", string(body))
 	}
-
-	cookies := resp.Cookies()
 }
